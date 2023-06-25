@@ -23,22 +23,22 @@ const Navbar = () => {
             </div>
             <div className="navbar__container-right">
               <ul className="navbar__right-links">
-                <Link to={"./services"} className="navbar__right-link">
+                <Link to={"/services"} className="navbar__right-link">
                   Xizmatlar
                 </Link>
-                <Link to={"./clinics"} className="navbar__right-link">
+                <Link to={"/clinics"} className="navbar__right-link">
                   Klinikalar
                 </Link>
-                <Link to={"./doctors"} className="navbar__right-link">
+                <Link to={"/doctors"} className="navbar__right-link">
                   Shifokorlar
                 </Link>
-                <Link to={"./news"} className="navbar__right-link">
+                <Link to={"/news"} className="navbar__right-link">
                   Yangiliklar
                 </Link>
-                <Link to={"./location"} className="navbar__right-link">
-                  Joylash
+                <Link to={"/location"} className="navbar__right-link">
+                  Joylashuv
                 </Link>
-                <Link to={"./ai"} className="navbar__right-link">
+                <Link to={"/ai"} className="navbar__right-link">
                   Sun'iy ong
                 </Link>
               </ul>
