@@ -1,10 +1,7 @@
-import React from "react";
 import "./container.scss";
-const Container = () => {
-  return (
-    <React.Fragment>
-      <div className="container"></div>
-    </React.Fragment>
-  );
-};
+
+function Container({ children, className }) {
+  return <div className={"container " + className}>{children}</div>;
+}
+
 export default Container;

@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999 !important;
+
+    &__container {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*This is a navbar icon styles*/
+
+    &__container-left {
+        width: 150px;
+    }
+
+    &__icon-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*This is a navbar link styles*/
+
+    &__container-right {
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right-links{
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
