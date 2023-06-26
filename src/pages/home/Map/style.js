@@ -6,12 +6,12 @@ export const Container = styled.div`
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
-`
+`;
 
 export const Wrapper = styled.div`
     max-width: 1350px;
     width: 100%;
-`
+`;
 
 export const Mapping = styled.iframe`
     width: 100%;
@@ -19,17 +19,17 @@ export const Mapping = styled.iframe`
     border-radius: 10px;
     border: none;
     overflow: hidden;
-`
+`;
 
 export const Title = styled.h1`
     color: #333;
     margin-bottom: 20px;
     font-weight: 600;
     position: relative;
-`
+`;
 
 export const Image = styled.img`
     width: 100px;
     position: absolute;
     left: -110px;
-`
+`;
