@@ -79,12 +79,12 @@
         height: 100%;
         width: 100%;
         object-fit: contain;
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
-        -moz-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        -o-transform: translateY(20px);
-}
+        transform: translateY(28px);
+        -webkit-transform: translateY(28px);
+        -moz-transform: translateY(28px);
+        -ms-transform: translateY(28px);
+        -o-transform: translateY(28px);
+    }
 
     &__about-left {
         height: 100%;
@@ -162,11 +162,11 @@
         justify-content: center;
         gap: 12rem;
         position: absolute;
-        transform: translateX(150px)translateY(-40px);
-        -webkit-transform: translateX(150px)translateY(-40px);
-        -moz-transform: translateX(150px)translateY(-40px);
-        -ms-transform: translateX(150px)translateY(-40px);
-        -o-transform: translateX(150px)translateY(-40px);
+        transform: translateX(150px)translateY(-28px);
+        -webkit-transform: translateX(150px)translateY(-28px);
+        -moz-transform: translateX(150px)translateY(-28px);
+        -ms-transform: translateX(150px)translateY(-28px);
+        -o-transform: translateX(150px)translateY(-28px);
     }
 
 }

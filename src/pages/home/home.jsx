@@ -8,6 +8,7 @@ import metib__call_icon from "../../assets/images/svg/metib__call-icon.svg";
 import metib__music from "../../assets/images/svg/metib__music.svg";
 import { Button } from "antd";
 import "./home.scss";
+import Homeclinics from "../../components/homeclinics/homeclinics";
 const Home = () => {
   return (
     <React.Fragment>
@@ -94,6 +95,7 @@ const Home = () => {
           </div>
         </Container>
       </header>
+      <Homeclinics/>
     </React.Fragment>
   );
 };
