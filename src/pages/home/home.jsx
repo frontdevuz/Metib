@@ -1,4 +1,6 @@
 import React from "react";
+import Map from "./Map/Map";
+
 import Container from "../../components/container/container";
 import metib__main from "../../assets/images/svg/metib__persons.svg";
 import metib__beat from "../../assets/images/svg/metib__heart.svg";
@@ -8,7 +10,11 @@ import metib__call_icon from "../../assets/images/svg/metib__call-icon.svg";
 import metib__music from "../../assets/images/svg/metib__music.svg";
 import { Button } from "antd";
 import "./home.scss";
+<<<<<<< HEAD
 import Homeclinics from "../../components/homeclinics/homeclinics";
+=======
+
+>>>>>>> 56d35944c96ab59d08ebf4f8c2348e9fdae2c6b8
 const Home = () => {
   return (
     <React.Fragment>
@@ -95,7 +101,11 @@ const Home = () => {
           </div>
         </Container>
       </header>
+<<<<<<< HEAD
       <Homeclinics/>
+=======
+      <Map />
+>>>>>>> 56d35944c96ab59d08ebf4f8c2348e9fdae2c6b8
     </React.Fragment>
   );
 };

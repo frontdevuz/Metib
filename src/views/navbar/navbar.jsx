@@ -4,9 +4,11 @@ import "./navbar.scss";
 import Container from "../../components/container/container.jsx";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
+
 import metib__search from "../../assets/images/icons/metib__search.svg";
 import metib__main from "../../assets/images/png/metib__main.png";
 import metib__person from "../../assets/images/icons/metib__profile.svg";
+
 const Navbar = () => {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
