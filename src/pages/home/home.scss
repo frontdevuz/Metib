@@ -1,0 +1,172 @@
+.header {
+    margin-top: 93px;
+    background: url(../../assets/images/svg/metib__background.svg)no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__left {
+        width: 30%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__title {
+        width: 600px;
+        margin-top: 100px;
+        font-size: 65px;
+        font-weight: 700;
+        color: #65b389;
+        text-transform: uppercase;
+    }
+
+    &__service-container {
+        display: flex;
+        align-items: center;
+        margin-top: 1.4rem;
+        gap: 5px;
+    }
+
+    &__service-icon {
+        margin-right: 1rem;
+        width: 50px;
+    }
+
+    &__settings {
+        margin-right: 1rem;
+    }
+
+    &__service-about {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__service-title {
+        font-weight: 700;
+        font-size: 25px;
+        color: #65b389;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        height: 37px;
+        padding: 0 4rem;
+        margin-top: 1.5rem;
+        transition: all .2s ease;
+        background: #65b389;
+
+        &:hover {
+            background: green !important;
+        }
+
+    }
+
+    &__right {
+        width: 70%;
+        height: 600px;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+}
+
+    &__about-left {
+        height: 100%;
+        width: 300px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        gap: 1rem;
+        background: #fff;
+    }
+
+    &__about-right {
+        height: 100%;
+        width: 150px;
+        gap: 1rem;
+        padding: 0 1rem;
+        display: flex;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: #fff;
+    }
+
+    &__about-number {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__about-icon {
+        height: 100%;
+        padding: 3px 0;
+    }
+
+    &__about-call {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__about-music {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__about-title {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__about-service {
+        font-size: 13px;
+        font-weight: 500;
+        color: #65b389;
+    }
+
+    &__about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3rem;
+    }
+
+    &__right-container {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        gap: 12rem;
+        position: absolute;
+        transform: translateX(150px)translateY(-40px);
+        -webkit-transform: translateX(150px)translateY(-40px);
+        -moz-transform: translateX(150px)translateY(-40px);
+        -ms-transform: translateX(150px)translateY(-40px);
+        -o-transform: translateX(150px)translateY(-40px);
+    }
+
+}

@@ -11,7 +11,6 @@ export const clinics = [{
     rating: 5,
     latitude:40.759197,
     longitude:72.364559,
-
     clinicSection: [{
         operatsiya: "https://adti.uz/wp-content/uploads/2019/01/IMG_5276.jpg",
         stomatologiya: "https://avatars.mds.yandex.net/i?id=479d2b39ba6518bac14eea8ba00ba0c31784a5c9-5577672-images-thumbs&n=13",
