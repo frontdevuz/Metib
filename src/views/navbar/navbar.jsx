@@ -6,6 +6,7 @@ import { Button } from "antd";
 import medip__search from "../../assets/images/icons/metib__search.svg";
 import medip__icon from "../../assets/images/icons/metib__icon.svg";
 import medip__person from "../../assets/images/icons/metib__profile.svg";
+
 const Navbar = () => {
   return (
     <React.Fragment>
