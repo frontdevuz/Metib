@@ -18,7 +18,6 @@ const Navbar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  console.log(scroll);
   return (
     <React.Fragment>
       <nav className={scroll > 120 ? "navbar navbar__scrolled" : "navbar"}>

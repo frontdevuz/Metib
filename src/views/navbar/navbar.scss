@@ -3,12 +3,7 @@
     position: fixed;
     top: 0;
     z-index: 999 !important;
-<<<<<<< HEAD
     background: #ffffff;
-=======
-
-    background: #fff;
->>>>>>> 56d35944c96ab59d08ebf4f8c2348e9fdae2c6b8
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     transition: .3s ease;
 
@@ -134,7 +129,6 @@
     }
 
     &__scrolled {
-        padding: 0 3rem;
         backdrop-filter: blur(10px);
         background: #ffffff4a;
     }

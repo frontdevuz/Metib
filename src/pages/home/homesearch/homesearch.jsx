@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-import metib__search from "../../assets/images/icons/metib__search-white.svg";
+import metib__search from "../../../assets/images/icons/metib__search-white.svg";
 import "./homesearch.scss";
 const Search = () => {
   return (
