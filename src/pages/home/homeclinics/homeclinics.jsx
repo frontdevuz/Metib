@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 import metib__star from "../../../assets/images/icons/metib__star.svg";
 import Container from "../../../components/container/container.jsx";
 import { clinics } from "./../../../data/clinic";
-import { Button } from "antd";
+import Btn from "../../../components/button/button.jsx";
+import Buttoncontainer from "../../../components/buttoncontainer/buttoncontainer.jsx";
+
 const Homeclinics = () => {
   return (
     <React.Fragment>
@@ -59,9 +61,9 @@ const Homeclinics = () => {
               );
             })}
           </div>
-          <div className="clinic__container-btn">
-            <Button type="primary" className="clinic__btn">Barcha klinikalar</Button>
-          </div>
+          <Buttoncontainer>
+            <Btn>Barcha kliniklar</Btn>
+          </Buttoncontainer>
         </Container>
       </section>
     </React.Fragment>

@@ -1,6 +1,5 @@
 .clinic {
     background: #eee;
-    margin-top: 5rem;
 
     &__container {
         display: flex;
@@ -115,11 +114,6 @@
         text-decoration: underline;
     }
 
-    &__container-btn {
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-    }
 
     &__btn {
         height: 45px;
