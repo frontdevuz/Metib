@@ -3,7 +3,7 @@ import { MapLink } from "./link";
 import { Container, Image, Mapping, Title, Wrapper } from "./style";
 import Beat from "../../../assets/images/svg/beat.svg";
 
-const Map = () => {
+const Homemap = () => {
   return (
     <React.Fragment>
       <Container>
@@ -23,4 +23,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default Homemap;

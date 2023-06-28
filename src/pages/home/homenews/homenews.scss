@@ -1,0 +1,69 @@
+.news {
+    margin-top: 5rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        gap: 4rem;
+
+    }
+
+    &__card {
+        height: 420px;
+        max-width: 300px;
+        padding: 8px;
+        background: url("../../../assets/images/svg/metib__bg-molecula.svg")no-repeat;
+        background-size: contain;
+        background-position: right;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        background: #FFF;
+        cursor: pointer;
+        transition: all .3s linear;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+
+    &__card-top {
+        height: 50%;
+        position: relative;
+    }
+
+    &__card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &__span{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 7px;
+        font-weight: 300;
+        font-size: 15px;
+        color: white;
+        background: #F7051D;
+    }
+    &__card-bottom{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+    &__title{
+        color: #3a3a3a;
+        font-weight: 500;
+        margin-top: 1rem;
+        font-size: 22px;
+        line-height: 2rem;
+        margin-bottom: 0.4rem;
+    }
+}

@@ -6,10 +6,10 @@ import Clinics from "./pages/clinics/clinics";
 import Doctors from "./pages/doctors/doctors";
 import Location from "./pages/location/location";
 import News from "./pages/news/news";
-// import Ai from "./pages/ai/ai";
 import Notfound from "./pages/notfound/notfound";
 import Navbar from "./views/navbar/navbar";
 import Footer from "./views/footer/footer";
+// import Ai from "./pages/ai/ai";
 import { Routes, Route } from "react-router-dom";
 function App() {
   return (
