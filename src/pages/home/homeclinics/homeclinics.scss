@@ -3,7 +3,7 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 5rem;
         margin-top: 70px;
@@ -12,11 +12,11 @@
     }
 
     &__container-card {
-        width: 400px;
+        width: 350px;
         height: 420px;
         border-radius: 15px;
         box-shadow: 4px 10px 25px 0px rgba(0, 0, 0, 0.20);
-        transition: .4s linear;
+        transition: .3s linear;
         cursor: pointer;
 
         &:hover {

@@ -66,12 +66,6 @@ export const doctorsData = [
         job: 'Ginekolog',
     }
     , {
-        id: 11,
-        img: 'https://medsi.ru/upload/resize_cache/iblock/826/328_350_2/826f78ec5ec99d595eed90196d3d2da8.jpg',
-        name: 'Aliyev Xusan Karimovich',
-        job: 'Pediatr',
-    }
-    , {
         id: 12,
         img: 'https://medsi.ru/upload/resize_cache/iblock/691/328_350_2/691ae7f73a62f111622cfe7bf4bc149b.jpg',
         name: 'Baxromova Zulayho Akbarovna',

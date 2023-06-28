@@ -7,7 +7,7 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 3rem;
 
@@ -35,7 +35,7 @@
     &__title{
         color: #3a3a3a;
         font-weight: 500;
-        margin-bottom: 1rem
+        margin: .3rem 0;
     }
     &__description{
         font-size: 16px;

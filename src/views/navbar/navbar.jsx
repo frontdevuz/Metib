@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
   return (
     <React.Fragment>
-      <nav className={scroll > 120 ? "navbar navbar__scrolled" : "navbar"}>
+      <nav className={scroll > 70 ? "navbar navbar__scrolled" : "navbar"}>
         <Container>
           <div className="navbar__container">
             <div className="navbar__container-left">
@@ -49,9 +49,9 @@ const Navbar = () => {
                 <Link to={"/location"} className="navbar__right-link">
                   Joylashuv
                 </Link>
-                <Link to={"/ai"} className="navbar__right-link">
+                {/* <Link to={"/ai"} className="navbar__right-link">
                   Sun'iy ong
-                </Link>
+                </Link> */}
               </ul>
               <div className="navbar__login-button">
                 <img src={metib__search} alt="This is a search icon" />

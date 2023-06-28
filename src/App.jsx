@@ -6,7 +6,7 @@ import Clinics from "./pages/clinics/clinics";
 import Doctors from "./pages/doctors/doctors";
 import Location from "./pages/location/location";
 import News from "./pages/news/news";
-import Ai from "./pages/ai/ai";
+// import Ai from "./pages/ai/ai";
 import Notfound from "./pages/notfound/notfound";
 import Navbar from "./views/navbar/navbar";
 import Footer from "./views/footer/footer";
@@ -22,7 +22,7 @@ function App() {
         <Route path="doctors" element={<Doctors />} />
         <Route path="location" element={<Location />} />
         <Route path="news" element={<News />} />
-        <Route path="ai" element={<Ai />} />
+        {/* <Route path="ai" element={<Ai />} /> */}
         <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />

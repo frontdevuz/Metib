@@ -3,7 +3,8 @@
     background: url(../../assets/images/svg/metib__background.svg)no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    position: relative;
 
     &__left {
         width: 30%;
@@ -13,7 +14,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
     }
 
     &__title {
@@ -163,11 +163,8 @@
         justify-content: center;
         gap: 12rem;
         position: absolute;
-        transform: translateX(150px)translateY(-28px);
-        -webkit-transform: translateX(150px)translateY(-28px);
-        -moz-transform: translateX(150px)translateY(-28px);
-        -ms-transform: translateX(150px)translateY(-28px);
-        -o-transform: translateX(150px)translateY(-28px);
+        left: 120px;
+        bottom: -22px;
     }
 
 }
