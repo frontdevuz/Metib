@@ -120,7 +120,9 @@
         &:hover {
             background: green !important;
         }
-
+        &:active{
+            transform: scale(1.04);
+        }
     }
 
     &__person-icon {

@@ -6,6 +6,7 @@ import "./homenews.scss";
 import Title from "../../../components/title/title";
 import Buttoncontainer from "./../../../components/buttoncontainer/buttoncontainer";
 import Btn from "../../../components/button/button";
+import metib__molecula from "../../../assets/images/svg/metib__bg-molecula.svg";
 const Homenews = () => {
   return (
     <React.Fragment>
@@ -16,6 +17,7 @@ const Homenews = () => {
             {homeNumber?.map((news) => {
               return (
                 <div className="news__card">
+                  <img src={metib__molecula} alt="This is a metib molecula img" className="news__img" />
                   <div className="news__card-top">
                     <img
                       src={metib__news}

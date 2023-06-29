@@ -46,8 +46,10 @@
         &:hover {
             background: green !important;
         }
-
-    }
+        &:active{
+            transform: scale(1.04);
+        }
+    }   
 
 
 }
