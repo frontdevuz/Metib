@@ -5,7 +5,7 @@ import { clinics } from "../../../data/clinic";
 import { mapOptions } from "./option";
 
 
-const Map = ({ setCards, Cards }) => {
+const Map =React.memo(({ setCards, Cards }) => {
   const [coordinates, setcoordinates] = useState({
     lat: 40.759929,
     lng: 72.358453,
@@ -28,11 +28,15 @@ const Map = ({ setCards, Cards }) => {
         center={coordinates}
         defaultZoom={16}
         margin={[50, 50, 50, 50]}
+        
         options={mapOptions}
         onChange={(e) => {
           setcoordinates({ lat: e.center.lat, lng: e.center.lng });
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
+        shouldPureComponentUpdate={() => false}
+        
+        
 
         // onChildClick={(child) => innerme(child)}
       >
@@ -77,6 +81,6 @@ const Map = ({ setCards, Cards }) => {
       </GoogleMapReact>
     </div>
   );
-};
+});
 
 export default Map;
