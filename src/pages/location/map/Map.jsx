@@ -35,9 +35,6 @@ const Map =React.memo(({ setCards, Cards }) => {
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
         shouldPureComponentUpdate={() => false}
-        
-        
-
         // onChildClick={(child) => innerme(child)}
       >
         {clinics?.map((place, i) => (

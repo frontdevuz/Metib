@@ -6,15 +6,14 @@ import Cell from '../../../assets/images/png/cell.png';
 import LocationIcon from '../../../assets/images/png/location.png';
 import {clinics} from '../../../data/clinic'
 
-const List = () => {
-  const [Data, setData] = useState(clinics)
+const List = ({Cards,setCards}) => {
   const [search_word, setsearch_word] = useState('')
 
   const change = (word) => {
     let filtered = clinics.filter((item)=>{
       return item.name?.toLowerCase()?.includes(word?.toLowerCase())
     })
-    setData(filtered)
+    setCards(filtered)
   }
 
 
@@ -27,7 +26,7 @@ const List = () => {
             </Box>
             <ClinicsPlace>
                 {
-                  Data?.map((item,index)=>(
+                  Cards?.map((item,index)=>(
                     <Card key={index}>
                       <Row>
                         <CardLeft>
