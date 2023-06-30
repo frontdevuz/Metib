@@ -22,8 +22,8 @@ function App() {
         <Route path="doctors" element={<Doctors />} />
         <Route path="location" element={<Location />} />
         <Route path="news" element={<News />} />
-        {/* <Route path="ai" element={<Ai />} /> */}
         <Route path="*" element={<Notfound />} />
+        {/* <Route path="ai" element={<Ai />} /> */}
       </Routes>
       <Footer />
     </React.Fragment>

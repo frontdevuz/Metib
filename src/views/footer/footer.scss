@@ -83,13 +83,15 @@
         justify-content: center;
 
     }
-    &__social{
+
+    &__social {
         width: 200px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: .5rem;
     }
+
     &__about-text {
         display: flex;
         gap: 1.4rem;

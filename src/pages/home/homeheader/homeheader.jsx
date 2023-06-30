@@ -7,7 +7,7 @@ import metib__discount from "../../../assets/images/svg/metib__discount.svg";
 import metib__call_icon from "../../../assets/images/svg/metib__call-icon.svg";
 import metib__music from "../../../assets/images/svg/metib__music.svg";
 import { Button } from "antd";
-import "../home.scss";
+import "../../../styles/home.scss";
 const Homeheader = () => {
   return (
     <React.Fragment>

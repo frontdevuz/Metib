@@ -2,9 +2,10 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "./navbar.scss";
 import Container from "../../components/container/container.jsx";
+import Form from "../form/form";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "antd";
-
 import metib__search from "../../assets/images/icons/metib__search.svg";
 import metib__main from "../../assets/images/png/metib__main.png";
 import metib__person from "../../assets/images/icons/metib__profile.svg";
@@ -18,6 +19,24 @@ const Navbar = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  }, [location.pathname]);
+
+  const [isShown, setisShown] = useState(false);
+
+  function handle_open() {
+    setisShown(true);
+  }
+  function handle_close(params) {
+    setisShown(false);
+  } 
   return (
     <React.Fragment>
       <nav className={scroll > 70 ? "navbar navbar__scrolled" : "navbar"}>
@@ -53,9 +72,13 @@ const Navbar = () => {
                   Sun'iy ong
                 </Link> */}
               </ul>
-              <div className="navbar__login-button">
+              <div className="navbar__login-button navbar__user-cob">
                 <img src={metib__search} alt="This is a search icon" />
-                <Button type="primary" className="navbar__btn">
+                <Button
+                  type="primary"
+                  className="navbar__btn"
+                  onClick={handle_open}
+                >
                   <img
                     src={metib__person}
                     className="navbar__person-icon"
@@ -67,6 +90,7 @@ const Navbar = () => {
             </div>
           </div>
         </Container>
+        {isShown ? <Form handle_close={handle_close} /> : null}
       </nav>
     </React.Fragment>
   );

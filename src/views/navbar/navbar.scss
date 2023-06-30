@@ -120,7 +120,8 @@
         &:hover {
             background: green !important;
         }
-        &:active{
+
+        &:active {
             transform: scale(1.04);
         }
     }
@@ -134,5 +135,4 @@
         backdrop-filter: blur(10px);
         background: #ffffff4a;
     }
-
 }
