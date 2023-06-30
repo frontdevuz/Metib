@@ -1,0 +1,15 @@
+.clinics {
+    background: #eee;
+    margin-top: 8rem;
+
+}
+
+.clinic__btn {
+    padding: 0 3rem;
+
+    &:nth-child(2) {
+        background: #fff;
+        border: 2px solid #65b389;
+        color: #65b389;
+    }
+}

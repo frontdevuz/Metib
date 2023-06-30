@@ -1,9 +1,9 @@
 .header {
-    margin-top: 40px;
-    background: url(../../assets/images/svg/metib__background.svg)no-repeat;
+    margin-top: 40px !important;
+    margin-bottom: 7rem;
+    background: url("../assets/images/svg/metib__background.svg")no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 2rem;
     position: relative;
 
     &__left {
@@ -60,13 +60,14 @@
         height: 37px;
         padding: 0 4rem;
         margin-top: 1.5rem;
-        transition: all .2s ease;
+        transition: all .4s linear;
         background: #65b389;
 
         &:hover {
             background: green !important;
         }
-        &:active{
+
+        &:active {
             transform: scale(1.04);
         }
 
@@ -75,7 +76,7 @@
     &__right {
         width: 70%;
         height: 600px;
-        margin-top: 2rem;
+        margin-top: 3.5rem;
         position: relative;
     }
 
@@ -83,7 +84,7 @@
         height: 100%;
         width: 100%;
         object-fit: contain;
-        transform: translateY(28px);
+        transform: translateY(20px);
         -webkit-transform: translateY(28px);
         -moz-transform: translateY(28px);
         -ms-transform: translateY(28px);

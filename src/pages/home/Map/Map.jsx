@@ -1,15 +1,14 @@
 import React from "react";
 import { MapLink } from "./link";
-import { Container, Image, Mapping, Title, Wrapper } from "./style";
-import Beat from "../../../assets/images/svg/beat.svg";
-
+import { Container, Image, Mapping,  Wrapper } from "./style";
+import Title from "../../../components/title/title";
 const Homemap = () => {
   return (
     <React.Fragment>
       <Container>
         <Wrapper>
           <Title>
-            <Image src={Beat} /> Joylashuv
+            Joylashuv
           </Title>
           <Mapping
             src={MapLink}

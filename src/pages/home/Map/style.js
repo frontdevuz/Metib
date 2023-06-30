@@ -9,8 +9,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    max-width: 1350px;
+    max-width: 1460px;
     width: 100%;
+    padding:0 20px;
 `;
 
 export const Mapping = styled.iframe`

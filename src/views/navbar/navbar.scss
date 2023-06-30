@@ -111,11 +111,7 @@
         background: #65b389;
         height: 37px;
         margin-left: 20px;
-        transition: all .2s ease;
-        -webkit-transition: all .2s ease;
-        -moz-transition: all .2s ease;
-        -ms-transition: all .2s ease;
-        -o-transition: all .2s ease;
+        transition: all .4s linear;
 
         &:hover {
             background: green !important;

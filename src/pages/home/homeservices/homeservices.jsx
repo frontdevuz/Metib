@@ -24,7 +24,7 @@ const Homeservices = () => {
                     className="service__img"
                   />
                   <img
-                    src={metib__lung}
+                    src={service.icon}
                     alt="This is a service icon"
                     className="service__icon"
                   />

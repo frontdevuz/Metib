@@ -1,0 +1,39 @@
+.clinics {
+    &__container-img {
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__right-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: all .4s linear;
+
+        &:hover {
+            transform: scale(1.04)
+        }
+    }
+
+    &__right-title {
+        font-size: 23px;
+        font-weight: 500;
+        margin: 1rem 0;
+        color: #65B389;
+    }
+
+    &__right-text {
+        width: 400px;
+        display: flex;
+        margin-bottom: 1.1rem;
+        color: #3a3a3a;
+        font-weight: 500;
+    }
+
+    &__right-description {
+        margin-left: 1rem;
+    }
+}
