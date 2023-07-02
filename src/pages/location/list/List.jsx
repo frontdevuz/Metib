@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import { Box, Button, Card, CardBlock, CardBottom, CardIcon, CardIconText, CardImage, CardLeft, CardLeft1, CardRight, CardRight1, CardText, CardTitle, CardWrap, ClinicsPlace, Container, Input, MoreButton, MoreButton2, Reyting, Row, Wrapper } from './style'
+import React, { useEffect, useState } from 'react'
+import { Box, ButtonAnt, ButtonAnt2, ButtonMy, Card, CardBlock, CardBottom, CardIcon, CardIconText, CardImage, CardLeft, CardLeft1, CardRight, CardRight1, CardText, CardTitle, CardWrap, ClinicsPlace, Container, Input, MoreButton, MoreButton2, Reyting, Row, Wrapper } from './style'
 import { Avatar, AvatarGroup, Rating } from '@mui/material'
-import Hos1 from '../../../assets/images/png/hos1.png';
 import Cell from '../../../assets/images/png/cell.png';
 import LocationIcon from '../../../assets/images/png/location.png';
 import {clinics} from '../../../data/clinic'
+import { MenuUnfoldOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 const List = ({Cards,setCards}) => {
-  const [search_word, setsearch_word] = useState('')
-
+  const [Show, setShow] = useState(true)
+  const navigate = useNavigate()
   const change = (word) => {
     let filtered = clinics.filter((item)=>{
       return item.name?.toLowerCase()?.includes(word?.toLowerCase())
@@ -16,13 +17,32 @@ const List = ({Cards,setCards}) => {
     setCards(filtered)
   }
 
+  function HandleClinic(item) {
+    navigate('/clinics',{state:item})
+  }
+
+  useEffect(()=>{
+    function Change(params) {
+      setShow(true)
+    }
+    Change()
+  },[setCards,Cards])
+
 
   return (
-    <Container>
+    <React.Fragment>
+    {Show ? "" : <ButtonAnt2 onClick={()=>setShow(true)} type="outlined" icon={<MenuUnfoldOutlined  style={{fontSize:25,color:"#65B389"}}/>} size={"large"} />}
+    <Container Show={Show}>
         <Wrapper>
             <Box>
                 <Input  placeholder='Qidiruv...' onChange={(e)=>change(e.target.value)} />
-                <Button>Search</Button>
+                <ButtonMy>Search</ButtonMy>
+                <ButtonAnt 
+                    onClick={()=>setShow(false)} 
+                    type="outlined" 
+                    icon={<MenuUnfoldOutlined  style={{fontSize:30,color:"#65B389"}}/>} 
+                    size={"large"} 
+                  />
             </Box>
             <ClinicsPlace>
                 {
@@ -60,7 +80,7 @@ const List = ({Cards,setCards}) => {
                           </CardLeft1>
                           <CardRight1>
                             <MoreButton>Qabulga yozilish</MoreButton>
-                            <MoreButton2>Batafsil</MoreButton2>
+                            <MoreButton2 onClick={()=>HandleClinic(item)}>Batafsil</MoreButton2>
                           </CardRight1>
                         </CardBottom>
                     </Card>
@@ -69,6 +89,8 @@ const List = ({Cards,setCards}) => {
             </ClinicsPlace>
         </Wrapper>
     </Container>
+    </React.Fragment>
+
   )
 }
 

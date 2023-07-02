@@ -5,12 +5,12 @@ import metib__call__icon from "../../../assets/images/svg/metib__call__icon.svg"
 import metib__calendar__icon from "../../../assets/images/svg/metib__calendar__icon.svg";
 import Btn from "../../../components/button/button";
 import { Link } from "react-router-dom";
-const Clinic__left = () => {
+const Clinic__left = ({clinic_info}) => {
   return (
     <React.Fragment>
       <div className="clinics__left">
         <h1 className="clinics__title">
-          Bobur prospektidagi Zam-Zam ko‘p funktsiyali tibbiyot markazi
+          {clinic_info?.name}
         </h1>
         <div className="clinics__left-text">
           <div className="clinics__left-img">

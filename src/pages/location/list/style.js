@@ -1,4 +1,25 @@
+import { Button } from "antd";
 import styled from "styled-components";
+
+export const ButtonAnt  = styled(Button)`
+    display: none;
+    @media(max-width:430px){
+        display: block;
+    }
+`
+
+export const ButtonAnt2  = styled(Button)`
+    display: none;
+    @media(max-width:430px){
+        display: block;
+        z-index: 11;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #909090;
+    }
+`
 
 export const Container = styled.div`
     width: 550px;
@@ -10,6 +31,14 @@ export const Container = styled.div`
     left: 0;
     top: 0;
     background-color: rgba(255,255,255,0.8);
+    transition: 1s;
+    @media(max-width:570px){
+        width: 100%;
+    }
+    @media(max-width:430px){
+        position: fixed;
+        left: ${p=>p.Show ? 0 : "-550px"};
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -32,9 +61,12 @@ export const Input = styled.input`
     padding: 7px;
     outline: none;
     border: none    ;
+    @media(max-width:430px){
+        width: 100%;
+    }
 `
 
-export const Button = styled.button`
+export const ButtonMy = styled.button`
     width: 120.74853515625px;
     height: 40px;
     border-radius: 10px;
@@ -45,6 +77,10 @@ export const Button = styled.button`
     letter-spacing: 0em;
     color: white;
     cursor: pointer;
+    @media(max-width:430px){
+        width: 100%;
+        display: none;
+    }
 `
 
 export const ClinicsPlace = styled.div`
@@ -71,26 +107,43 @@ export const Row = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
+    @media(max-width:430px){
+        flex-direction: column;
+        align-items: center;
+    }
 `
 export const CardLeft = styled.div`
     width: 40%;
     position: relative;
+    @media(max-width:430px){
+        width: 100%;
+    }
 `
 export const CardLeft1 = styled.div`
     width: 40%;
+    @media(max-width:430px){
+        width: 100%;
+    }
 `
 
 export const CardImage = styled.img`
     width: 100%;
     border-radius: 10px;
+    
 `
 export const CardRight = styled.div`
     width: 60%;
+    @media(max-width:430px){
+        width: 100%;
+    }
 `
 export const CardRight1 = styled.div`
     width: 60%;
     gap: 10px;
     display: flex;
+    @media(max-width:430px){
+        width: 100%;
+    }
 `
 
 export const CardTitle = styled.h1`
@@ -127,6 +180,10 @@ export const Reyting = styled.div`
 export const CardBottom = styled.div`
     display: flex;
     align-items: center;
+    @media(max-width:430px){
+        flex-direction: column;
+        gap: 20px;
+    }
 `
 
 export const CardWrap = styled.div`

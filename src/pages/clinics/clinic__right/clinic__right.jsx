@@ -5,12 +5,12 @@ import metib__evelator from "../../../assets/images/svg/metib__elevator__icon.sv
 import metib__invalid from "../../../assets/images/svg/metib__invalid__icon.svg";
 import "./clinic__right.scss";
 
-const Clinic__right = () => {
+const Clinic__right = ({clinic_info}) => {
   return (
     <React.Fragment>
       <div className="clinics__right">
         <div className="clinics__container-img">
-          <img src={metib__clinic} alt="This is a metib clinic img" className="clinics__right-img" />
+          <img src={clinic_info?.img} alt="This is a metib clinic img" className="clinics__right-img" />
         </div>
         <div className="clinics__right-about">
           <h2 className="clinics__right-title">

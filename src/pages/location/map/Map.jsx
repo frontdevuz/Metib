@@ -5,7 +5,7 @@ import { clinics } from "../../../data/clinic";
 import { mapOptions } from "./option";
 
 
-const Map =React.memo(({ setCards, Cards }) => {
+const Map = React.memo(({ setCards, Cards }) => {
   const [coordinates, setcoordinates] = useState({
     lat: 40.759929,
     lng: 72.358453,
@@ -22,7 +22,7 @@ const Map =React.memo(({ setCards, Cards }) => {
   return (
     <div style={{ width: "100%", height: "100vh" }}>
       <GoogleMapReact
-        style={{ width: "500px", height: "500px" }}
+        style={{ width: "100%", height: "100%" }}
         bootstrapURLKeys={{ key: "AIzaSyB8NHCF-5fMix0w2363RhC3V4vcyw8SHSM" }}
         defaultCenter={coordinates}
         center={coordinates}
