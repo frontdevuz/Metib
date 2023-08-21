@@ -52,7 +52,7 @@ const Homeclinics = () => {
                     </div>
                     <div className="clinic__card-bottom">
                       <div className="clinic__card-title">{item.name}</div>
-                      <Link to={"/"} className="clinic__link">
+                      <Link to={"Info"} className="clinic__link">
                         Batafsil
                       </Link>
                     </div>
