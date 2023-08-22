@@ -17,9 +17,9 @@ const Info = () => {
                     <img className="clinikImage" src={clinikImage} alt="clinikImage" />
                     <div className="startimages">
                         <div className="starImagesInit">
-                            <img src={metib__star} alt="metib__star" />
-                            <img src={metib__star} alt="metib__star" />
-                            <img src={metib__star} alt="metib__star" />
+                            <img className="star" src={metib__star} alt="metib__star" />
+                            <img className="star"  src={metib__star} alt="metib__star" />
+                            <img  src={metib__star} alt="metib__star" />
                             <img src={metib__star} alt="metib__star" />
                             <img src={metib__star} alt="metib__star" />
                         </div>
@@ -191,7 +191,7 @@ const Info = () => {
                 </div>
                 <div className="infos">
                     <img className="clinikImage" src={clinikImage5} alt="clinikImage5" />
-                    <div className="startimages">
+                      <div className="startimages">
                         <div className="starImagesInit">
                             <img src={metib__star} alt="metib__star" />
                             <img src={metib__star} alt="metib__star" />

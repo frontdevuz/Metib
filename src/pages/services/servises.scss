@@ -1,0 +1,106 @@
+body {
+    background: white;
+}
+
+.Servises-container {
+    position       : relative;
+    display        : flex;
+    justify-content: flex-end;
+    color          : black;
+    font-family    : 'Times New Roman', Times, serif;
+
+
+
+
+    .Servises__categories {
+        gap           : 20px;
+        margin-top    : 70px;
+        padding-top   : 70px;
+        display       : flex;
+        flex-direction: column;
+        color         : gray;
+        position      : fixed;
+        left          : 100px;
+        flex-direction: column;
+    }
+
+    .category {
+        margin-top: 70px;
+        color     : gray;
+    }
+
+    .Servises__categories a {
+        display    : flex;
+        align-items: center;
+        color      : rgb(34, 181, 115);
+        height     : 40px;
+    }
+
+    .Servises__categories a:active {
+        color       : gray;
+        border-right: rgb(34, 181, 115);
+    }
+
+    .Servises-containerInit {
+        padding: 30px 100px 0px 0px;
+        width  : 70%;
+    }
+
+    .Servises-containerInit img {
+        width        : 100%;
+        object-fit   : contain;
+        border-radius: 15px;
+    }
+
+    .category__h1 {
+        color      : rgb(53, 52, 52);
+        font-family: 'Times New Roman', Times, serif;
+        font-size  : 250%;
+        margin     : 0px 0px 20px 0px;
+    }
+
+    .fMedicine__p {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .fMedicine__p1 {
+        margin: 10px 0px 20px 0px;
+    }
+
+    .fMedicine__languages {
+        color: rgb(39, 38, 38);
+    }
+
+    @media (max-width:800px) {
+        .Servises__categories {
+            font-size: 50%;
+            left     : 2%;
+        }
+
+        .category {
+            margin-top: 70px;
+            color     : gray;
+            width     : 200px;
+            font-size : 70%;
+        }
+
+        .Servises__categories a {
+            width: 90%;
+
+        }
+
+        .category__h1 {
+            width    : 300%;
+            font-size: 80%;
+            margin   : 0px 0px 20px 0px;
+        }
+
+        .Servises-containerInit img {
+            width        : 100%;
+            object-fit   : contain;
+            border-radius: 5px;
+        }
+
+
+    }
+}
