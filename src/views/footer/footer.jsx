@@ -10,6 +10,7 @@ import metib__footer__youtube from "../../assets/images/svg/metib__footer__youtu
 import metib__footer__facebook from "../../assets/images/svg/metib__footer__facebook.svg";
 import metib__footer__telegram from "../../assets/images/svg/metib__footer__telegram.svg";
 import { Link } from "react-router-dom";
+import { navbar } from "../../data/navbar";
 const Footer = () => {
   return (
     <React.Fragment>
@@ -32,22 +33,12 @@ const Footer = () => {
                 </p>
               </div>
               <div className="footer__left-menu">
-                <h2 className="footer__menu-title">Menyu</h2>
-                <Link to={"/services"} className="footer__menu-link">
-                  Xizmatlar
-                </Link>
-                <Link to={"/clinics"} className="footer__menu-link">
-                  Klinikalar
-                </Link>
-                <Link to={"/doctors"} className="footer__menu-link">
-                  Shifokorlar
-                </Link>
-                <Link to={"/news"} className="footer__menu-link">
-                  Yangiliklar
-                </Link>
-                <Link to={"/location"} className="footer__menu-link">
-                  Joylashuv
-                </Link>
+                <p className="footer__menu-title">Menyu</p>
+                {navbar.slice(0,3).map((item, index) => (
+                  <Link to={item.url} className="footer__menu-link">
+                    {item.name}
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="footer__container-right">
@@ -84,7 +75,8 @@ const Footer = () => {
                 <a
                   href="https://instagram.com"
                   className="foooter__social-icon"
-                target="_blank">
+                  target="_blank"
+                >
                   <img
                     src={metib__footer__instagram}
                     alt="This is a footer social icon"

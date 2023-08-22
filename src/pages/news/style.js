@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
+    padding:2rem 0;
 `;
 
 export const Wrapper = styled.div`

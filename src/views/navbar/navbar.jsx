@@ -1,15 +1,17 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import "./navbar.scss";
 import Container from "../../components/container/container.jsx";
 import Form from "../form/form";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { Button } from "antd";
 import metib__search from "../../assets/images/icons/metib__search.svg";
 import metib__main from "../../assets/images/png/metib__main.png";
 import metib__person from "../../assets/images/icons/metib__profile.svg";
-
+import { Button } from "antd";
+import { navbar } from "../../data/navbar";
+import Sidebar from "../sidebar/sidebar";
+import "./navbar-responsive.scss";
 const Navbar = () => {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
@@ -36,7 +38,11 @@ const Navbar = () => {
   }
   function handle_close(params) {
     setisShown(false);
-  } 
+  }
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("navbar__responsive");
+  };
   return (
     <React.Fragment>
       <nav className={scroll > 70 ? "navbar navbar__scrolled" : "navbar"}>
@@ -52,41 +58,33 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="navbar__container-right">
-              <ul className="navbar__right-links">
-                <Link to={"/services"} className="navbar__right-link">
-                  Xizmatlar
-                </Link>
-                <Link to={"/clinics"} className="navbar__right-link">
-                  Klinikalar
-                </Link>
-                <Link to={"/doctors"} className="navbar__right-link">
-                  Shifokorlar
-                </Link>
-                <Link to={"/news"} className="navbar__right-link">
-                  Yangiliklar
-                </Link>
-                <Link to={"/location"} className="navbar__right-link">
-                  Joylashuv
-                </Link>
-                {/* <Link to={"/ai"} className="navbar__right-link">
-                  Sun'iy ong
-                </Link> */}
+              <ul className="navbar__right-links" ref={navRef}>
+                {navbar.map((item, index) => (
+                  <NavLink to={item.url} className="navbar__right-link">
+                    {item.name}
+                  </NavLink>
+                ))}
+                <div className="navbar__form">
+                  <div className="navbar__login-button navbar__user-cob">
+                    <img src={metib__search} alt="This is a search icon" />
+                    <Button
+                      type="primary"
+                      className="navbar__btn"
+                      onClick={handle_open}
+                    >
+                      <img
+                        src={metib__person}
+                        className="navbar__person-icon"
+                        alt="This is a medip person icon"
+                      />
+                      Shahsiy kabinet
+                    </Button>
+                  </div>
+                </div>
               </ul>
-              <div className="navbar__login-button navbar__user-cob">
-                <img src={metib__search} alt="This is a search icon" />
-                <Button
-                  type="primary"
-                  className="navbar__btn"
-                  onClick={handle_open}
-                >
-                  <img
-                    src={metib__person}
-                    className="navbar__person-icon"
-                    alt="This is a medip person icon"
-                  />
-                  Shahsiy kabinet
-                </Button>
-              </div>
+              <button className="navbar__item__x" onClick={showNavbar}>
+                <Sidebar />
+              </button>
             </div>
           </div>
         </Container>

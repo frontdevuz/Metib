@@ -12,7 +12,7 @@ const Title = (props) => {
             className="title__img"
           />
         </div>
-        <h2 className="title__title">{props.children}</h2>
+        <p className="title__title">{props.children}</p>
       </div>
     </React.Fragment>
   );

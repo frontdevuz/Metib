@@ -7,6 +7,7 @@ import Title from "../../../components/title/title";
 import Buttoncontainer from "./../../../components/buttoncontainer/buttoncontainer";
 import Btn from "../../../components/button/button";
 import metib__molecula from "../../../assets/images/svg/metib__bg-molecula.svg";
+import { Link } from "react-router-dom";
 const Homenews = () => {
   return (
     <React.Fragment>
@@ -17,7 +18,11 @@ const Homenews = () => {
             {homeNumber?.map((news) => {
               return (
                 <div className="news__card">
-                  <img src={metib__molecula} alt="This is a metib molecula img" className="news__img" />
+                  <img
+                    src={metib__molecula}
+                    alt="This is a metib molecula img"
+                    className="news__img"
+                  />
                   <div className="news__card-top">
                     <img
                       src={metib__news}
@@ -27,9 +32,9 @@ const Homenews = () => {
                     <span className="news__span">{news.number}</span>
                   </div>
                   <div className="news__card-bottom">
-                    <h2 className="news__title">
+                    <p className="news__title">
                       Shifoxonamizning so'ngi yangliklari
-                    </h2>
+                    </p>
                     <p className="news__text">
                       Risus fringilla curabitur dui nibh ipsum velit lacus.
                       Integer morbi massa libero ultrices elit congue ac orci.
@@ -40,7 +45,9 @@ const Homenews = () => {
             })}
           </div>
           <Buttoncontainer>
-            <Btn>Barcha yangiliklar</Btn>
+            <Btn>
+              Barcha yangiliklar
+            </Btn>
           </Buttoncontainer>
         </Container>
       </section>

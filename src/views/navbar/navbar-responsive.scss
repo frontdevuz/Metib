@@ -1,0 +1,83 @@
+.navbar {
+    transition: all .4s linear;
+
+    &__items {
+        transition: all .4s linear;
+    }
+
+    &__items__sidebar {
+        background: none;
+        display: none;
+        transition: .4s linear;
+    }
+
+    @media (max-width:1055px) {
+        .navbar {
+            transition: .4s linear !important;
+            &__container-right{
+                transition: all .4s linear;
+            }
+            &__right-links {
+                display: none;
+                transition: all .4s linear !important;
+                cursor: pointer;
+            }
+            &__item__x{
+                display: block;
+                transition: .4s linear;
+            }
+            &__item__home {
+                transform: scale(0);
+                // display: block;
+                font-weight: 600;
+                transition: .4s linear;
+
+            }
+
+            &__item-link {
+                font-weight: 600;
+            }
+
+            &__responsive {
+                position: absolute;
+                padding: 2rem;
+                width: 100%;
+                height: 450px;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                background: snow;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 2px 4px 20px black;
+                top: -450px;
+                transition: all .4s linear;
+
+                .navbar__item__x {
+                    display: block;
+                    background: transparent;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    border: 1.5px solid #000;
+                    transition: .4s linear !important;
+                    cursor: pointer;
+
+                    &:hover {
+                        transition: .4s linear;
+                        transform: scale(1.04);
+                        background: #000;
+                        color: white;
+
+                    }
+
+                }
+            }
+
+            &__responsive {
+                top: 0;
+            }
+        }
+    }
+}

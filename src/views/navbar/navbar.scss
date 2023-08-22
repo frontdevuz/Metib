@@ -41,25 +41,28 @@
     /*This is a navbar link styles*/
 
     &__container-right {
-        max-width: 1300px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background: transparent;
+
     }
 
     &__right-links {
-        width: 650px;
+        width: 850px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__right-link {
-        color: #3A3A3A;
+        color: #000;
         font-weight: 400;
         font-size: 18px;
         line-height: 36px;
         position: relative;
         cursor: pointer;
+
 
 
         &:hover {
@@ -78,17 +81,9 @@
             height: 3px;
             bottom: -2px;
             background: linear-gradient(green, #65b389);
-            transition: all .3s;
+            transition: all .4s;
             border-radius: 20px;
             z-index: -1;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            -webkit-transition: all .3s;
-            -moz-transition: all .3s;
-            -ms-transition: all .3s;
-            -o-transition: all .3s;
         }
 
 
@@ -97,12 +92,21 @@
         }
     }
 
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+
+    }
+
     /*This is a navbar login styles */
     &__login-button {
-        margin-left: 50px;
         display: flex;
         align-items: center;
         cursor: pointer;
+        background: transparent;
+
     }
 
     &__btn {
@@ -130,5 +134,12 @@
     &__scrolled {
         backdrop-filter: blur(10px);
         background: #ffffff4a;
+    }
+
+    &__item__x {
+        background: transparent;
+        display: none;
+        cursor: pointer;
+        transition: .4s linear;
     }
 }
