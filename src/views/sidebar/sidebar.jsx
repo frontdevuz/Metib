@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./sidebar.scss";
-const Sidebar = () => {
-  const [bar, setBar] = useState(false);
-  const OpenBar = () => setBar(!bar);
+const Sidebar = (props) => {
+  // const [bar, setBar] = useState(false);
+  // const OpenBar = () => setBar(!bar);
   return (
     <React.Fragment>
       <div className="sidebar">
         <div
-          className={
-            bar === false ? "open" : " open close"
-          }
-          onClick={OpenBar}
+          className={props.bar === false ? "open" : " open close"}
+          onClick={props.OpenBar}
         >
           <span className="sidebar__menu__item" id="one"></span>
           <span className="sidebar__menu__item" id="two"></span>

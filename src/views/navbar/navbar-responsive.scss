@@ -14,32 +14,17 @@
     @media (max-width:1055px) {
         .navbar {
             transition: .4s linear !important;
-            &__container-right{
+
+            &__container-right {
                 transition: all .4s linear;
             }
+
             &__right-links {
-                display: none;
+                // display: none;
                 transition: all .4s linear !important;
                 cursor: pointer;
-            }
-            &__item__x{
-                display: block;
-                transition: .4s linear;
-            }
-            &__item__home {
-                transform: scale(0);
-                // display: block;
-                font-weight: 600;
-                transition: .4s linear;
 
-            }
-
-            &__item-link {
-                font-weight: 600;
-            }
-
-            &__responsive {
-                position: absolute;
+                position: fixed;
                 padding: 2rem;
                 width: 100%;
                 height: 450px;
@@ -49,7 +34,7 @@
                 background: snow;
                 border-radius: 0 0 20px 20px;
                 box-shadow: 2px 4px 20px black;
-                top: -450px;
+                top: -500px;
                 transition: all .4s linear;
 
                 .navbar__item__x {
@@ -75,9 +60,43 @@
                 }
             }
 
+            &__item__x {
+                display: block;
+                transition: .4s linear;
+            }
+
+            &__item__home {
+                transform: scale(0);
+                font-weight: 600;
+                transition: .4s linear;
+
+            }
+
+            &__item-link {
+                font-weight: 600;
+            }
+
+            &__user-cob {
+                img {
+                    display: none;
+                }
+            }
+
             &__responsive {
                 top: 0;
             }
+
         }
+    }
+}
+
+@media (max-width:1055px) {
+    .nav__back__show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.553);
+        transition: 0.4s linear;
+        backdrop-filter: blur(4px);
     }
 }

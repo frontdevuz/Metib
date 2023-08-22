@@ -17,21 +17,24 @@ const Homeservices = () => {
           <div className="service__container">
             {Homeservice?.map((service) => {
               return (
-                <div className="service__card">
-                  <img
-                    src={metib__molecula}
-                    alt="This is metib molecula imf"
-                    className="service__img"
-                  />
-                  <img
-                    src={service.icon}
-                    alt="This is a service icon"
-                    className="service__icon"
-                  />
-                  <h2 className="service__title">{service.name}</h2>
-                  <p className="service__description">
-                    {service.descrition.slice(0, 200)}
-                  </p>
+                <div className="service__c">
+                  <div className="service__card">
+                    <img
+                      src={metib__molecula}
+                      alt="This is metib molecula imf"
+                      className="service__img"
+                    />
+                    
+                    <img
+                      src={service.icon}
+                      alt="This is a service icon"
+                      className="service__icon"
+                    />
+                    <p className="service__title">{service.name}</p>
+                    <p className="service__description">
+                      {service.descrition.slice(0, 200)}
+                    </p>
+                  </div>
                 </div>
               );
             })}

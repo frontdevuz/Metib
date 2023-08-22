@@ -3,8 +3,8 @@
     position: fixed;
     top: 0;
     z-index: 999 !important;
-    background: #ffffff;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    background: #ffffff4a;
     transition: .3s ease;
 
     &__container {
@@ -62,13 +62,14 @@
         line-height: 36px;
         position: relative;
         cursor: pointer;
-
+        transition: all .4s linear;
 
 
         &:hover {
             background: linear-gradient(to right, green #65b389);
             -webkit-background-clip: text;
             opacity: .8;
+            transition: all .4s linear;
 
         }
 
@@ -81,7 +82,7 @@
             height: 3px;
             bottom: -2px;
             background: linear-gradient(green, #65b389);
-            transition: all .4s;
+            transition: all .5s;
             border-radius: 20px;
             z-index: -1;
         }
@@ -132,8 +133,7 @@
     }
 
     &__scrolled {
-        backdrop-filter: blur(10px);
-        background: #ffffff4a;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     }
 
     &__item__x {
@@ -141,5 +141,12 @@
         display: none;
         cursor: pointer;
         transition: .4s linear;
+    }
+
+    .active {
+        background: #65b389;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 10px;
     }
 }

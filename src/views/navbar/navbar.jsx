@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState,useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./navbar.scss";
 import Container from "../../components/container/container.jsx";
 import Form from "../form/form";
@@ -40,11 +40,23 @@ const Navbar = () => {
     setisShown(false);
   }
   const navRef = useRef();
+
+  const [nav, setNav] = useState(false);
   const showNavbar = () => {
     navRef.current.classList.toggle("navbar__responsive");
+    setNav(!nav);
+  };
+  const [bar, setBar] = useState(false);
+  const OpenBar = () => setBar(!bar);
+
+  const navClose = () => {
+    navRef.current.classList.toggle("navbar__responsive");
+    setNav(false);
+    setBar(false);
   };
   return (
     <React.Fragment>
+      <div className={nav ? "nav__back__show" : ""} onClick={navClose}></div>
       <nav className={scroll > 70 ? "navbar navbar__scrolled" : "navbar"}>
         <Container>
           <div className="navbar__container">
@@ -60,7 +72,12 @@ const Navbar = () => {
             <div className="navbar__container-right">
               <ul className="navbar__right-links" ref={navRef}>
                 {navbar.map((item, index) => (
-                  <NavLink to={item.url} className="navbar__right-link">
+                  <NavLink
+                    to={item.url}
+                    className="navbar__right-link"
+                    key={index}
+                    onClick={navClose}
+                  >
                     {item.name}
                   </NavLink>
                 ))}
@@ -83,7 +100,7 @@ const Navbar = () => {
                 </div>
               </ul>
               <button className="navbar__item__x" onClick={showNavbar}>
-                <Sidebar />
+                <Sidebar bar={bar} OpenBar={OpenBar} />
               </button>
             </div>
           </div>

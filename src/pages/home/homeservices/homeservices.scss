@@ -6,11 +6,11 @@
     }
 
     &__container {
+        margin-top: 3.5rem;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 3rem;
-
+        flex: 2;
     }
 
     &__card {
@@ -47,6 +47,6 @@
         object-fit: contain;
         left: 0;
         bottom: 0;
-        z-index: 10 !important;
+        // z-index: 10 !important;
     }
 }

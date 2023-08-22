@@ -14,7 +14,7 @@ export const navbar = [
     },
     {
         id: 4,
-        name: "Royhatdan otsh",
+        name: "Ro'yxatdan o'tish",
         url: "./register"
     },
 ]
