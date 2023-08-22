@@ -116,9 +116,25 @@
 
 @media(max-width:990px) {
     .footer {
-        background: red;
-        &__container{
-            background: red;
+        height: 600px;
+        padding: 2rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__container-left {
+            width: 100%;
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        &__container-right {
+            min-width: 100%;
+            display: flex;
+            justify-content: start;
         }
     }
 }

@@ -6,7 +6,7 @@
 }
 body{
   background: #eee;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 0.4rem;
@@ -36,3 +36,5 @@ button {
   border: none;
   outline: none;
 }
+
+// @media(max)

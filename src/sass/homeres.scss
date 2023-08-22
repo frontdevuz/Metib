@@ -1,0 +1,22 @@
+@media(max-width:1287px){
+    .header__about-number{
+        font-size: 16px !important;
+    }
+    .header__about-left{
+        width: 220px;
+    }
+}
+@media(max-width:1055px){
+    .header__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__right-container{
+        width: 400px;
+    }
+    .header__left{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+}

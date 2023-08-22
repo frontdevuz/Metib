@@ -12,6 +12,7 @@ import Footer from "./views/footer/footer";
 import { Routes, Route } from "react-router-dom";
 import Info from "./pages/moreInfo/moreInfo";
 import Register from "./pages/register/register";
+import "./sass/homeres.scss"
 function App() {
   return (
     <React.Fragment>
