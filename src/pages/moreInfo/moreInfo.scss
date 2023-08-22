@@ -6,11 +6,42 @@
     border         : 1px solid #000;
 
     .infos {
+        position  : relative;
         max-width : 500px;
         gap       : 40px;
         margin    : 50px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+    }
+
+    .startimages {
+        width          : 100%;
+        position       : absolute;
+        display        : flex;
+        justify-content: flex-end;
+        margin-top     : -23px;
+    }
+
+    .starImagesInit {
+        display         : flex;
+        justify-content : space-around;
+        height          : 30px;
+        width           : 32%;
+        background-color: white;
+        gap             : 3px;
+        padding         : 5px;
+        border-radius   : 15px 0px 0px 15px;
+
+    }
+
+    .starImagesInit img {
+        width: 15%;
+    }
+
+    .starImagesInit img:hover {
+        width     : 20%;
+        opacity   : (0.5);
+        transition: 0.4s;
     }
 
     .clinikImage {
@@ -69,7 +100,7 @@
         text-decoration-line: underline;
         text-transform      : capitalize;
         color               : #123456;
-        color         : rgb(93, 194, 149);
+        color               : rgb(93, 194, 149);
         font-weight         : 400;
         padding             : 10px;
     }
